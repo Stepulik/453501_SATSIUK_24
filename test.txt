@@ -1,2 +1,3 @@
 Номер варианта 24
 Something Added for repo
+MODIFIED TEXT FOR BRANCH2
