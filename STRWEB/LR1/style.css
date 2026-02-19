@@ -1,0 +1,193 @@
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Шапка */
+.header {
+    background-color: #ffffff;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #1e3a8a;
+    border-bottom-color: #1e3a8a;
+}
+
+/* Основной контент */
+.main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem 0;
+}
+
+.intro h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #475569;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0f172a;
+}
+
+/* Карточки услуг */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.25s, box-shadow 0.25s;
+    max-width: 340px;
+    flex: 1 1 280px;
+    border: 1px solid #f1f5f9;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px -10px rgba(0, 30, 60, 0.15);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.2rem 1.2rem 0.5rem;
+    color: #1e293b;
+}
+
+.card p {
+    color: #475569;
+    margin: 0 1.2rem 1.5rem;
+    font-size: 1rem;
+}
+
+/* Контактная информация */
+.contacts {
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 2rem;
+    border: 1px solid #e2e8f0;
+    margin-top: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+    color: #334155;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Подвал */
+.footer {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+
+/* Адаптивность */
+@media (max-width: 640px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .nav {
+        gap: 1.2rem;
+    }
+    .intro h2 {
+        font-size: 1.8rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .card h3 {
+        font-size: 1.3rem;
+    }
+}
