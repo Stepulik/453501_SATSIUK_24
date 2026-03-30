@@ -1,0 +1,140 @@
+[33mcommit 9955950ef2e067cebea677560f879162003f0214[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Stepulik <stepan.satsuk@yandex.ru>
+Date:   Thu Feb 19 08:08:34 2026 +0000
+
+    Add main files
+
+[1mdiff --git a/IGI/LR1/LR1Test.txt b/IGI/LR1/LR1Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/111/111Test.txt b/IGI/LR1/foo/111/111Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/222/222Test.txt b/IGI/LR1/foo/bar/222/222Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/barTest.txt b/IGI/LR1/foo/bar/barTest.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/333/333Test.txt b/IGI/LR1/foo/bar/baz/333/333Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bazTest.txt b/IGI/LR1/foo/bar/baz/bazTest.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bin/444/444Test.txt b/IGI/LR1/foo/bar/baz/bin/444/444Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bin/binTest.txt b/IGI/LR1/foo/bar/baz/bin/binTest.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bin/ln/700/700Test.txt b/IGI/LR1/foo/bar/baz/bin/ln/700/700Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bin/ln/example/200/200Test.txt b/IGI/LR1/foo/bar/baz/bin/ln/example/200/200Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bin/ln/example/exampleTest.txt b/IGI/LR1/foo/bar/baz/bin/ln/example/exampleTest.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bin/ln/lnTest.txt b/IGI/LR1/foo/bar/baz/bin/ln/lnTest.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bin/readme.txt b/IGI/LR1/foo/bar/baz/bin/readme.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/bar/baz/bin/test.txt b/IGI/LR1/foo/bar/baz/bin/test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/foo/fooTest.txt b/IGI/LR1/foo/fooTest.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR1/geometric_lib/circle.py b/IGI/LR1/geometric_lib/circle.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c3eb864[m
+[1m--- /dev/null[m
+[1m+++ b/IGI/LR1/geometric_lib/circle.py[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32mimport math[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef area(r):[m
+[32m+[m[32m    return math.pi * r * r[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef perimeter(r):[m
+[32m+[m[32m    return 2 * math.pi * r[m
+[32m+[m
+[1mdiff --git a/IGI/LR1/geometric_lib/docs/README.md b/IGI/LR1/geometric_lib/docs/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..63f8727[m
+[1m--- /dev/null[m
+[1m+++ b/IGI/LR1/geometric_lib/docs/README.md[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m# Math formulas[m
+[32m+[m[32m## Area[m
+[32m+[m[32m- Circle: S = πR²[m
+[32m+[m[32m- Rectangle: S = ab[m
+[32m+[m[32m- Square: S = a²[m
+[32m+[m
+[32m+[m[32m## Perimeter[m
+[32m+[m[32m- Circle: P = 2πR[m
+[32m+[m[32m- Rectangle: P = 2a + 2b[m
+[32m+[m[32m- Square: P = 4a[m
+\ No newline at end of file[m
+[1mdiff --git a/IGI/LR1/geometric_lib/square.py b/IGI/LR1/geometric_lib/square.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0f98724[m
+[1m--- /dev/null[m
+[1m+++ b/IGI/LR1/geometric_lib/square.py[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m
+[32m+[m[32mdef area(a):[m
+[32m+[m[32m    return a * a[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef perimeter(a):[m
+[32m+[m[32m    return 4 * a[m
+[1mdiff --git a/IGI/LR2/LR2Test.txt b/IGI/LR2/LR2Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR3/LR3Test.txt b/IGI/LR3/LR3Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR4/LR4Test.txt b/IGI/LR4/LR4Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/IGI/LR5/LR5Test.txt b/IGI/LR5/LR5Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/STRWEB/LR1/LR1Test.txt b/STRWEB/LR1/LR1Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/STRWEB/LR2/LR2Test.txt b/STRWEB/LR2/LR2Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/STRWEB/LR3/LR3Test.txt b/STRWEB/LR3/LR3Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/STRWEB/LR4/LR4Test.txt b/STRWEB/LR4/LR4Test.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/TEST2.txt b/TEST2.txt[m
+[1mindex e69de29..1c3e7ac 100644[m
+[1m--- a/TEST2.txt[m
+[1m+++ b/TEST2.txt[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mSome text2[m
+
+[33mcommit 8b581a86da2b6ee86d6ac857e1ca0e610c2c4b9c[m
+Author: Stepulik <stepan.satsuk@yandex.ru>
+Date:   Thu Feb 19 07:32:56 2026 +0000
+
+    Add new test files
+
+[1mdiff --git a/TEST1.txt b/TEST1.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/TEST2.txt b/TEST2.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m

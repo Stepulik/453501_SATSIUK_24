@@ -1,0 +1,14 @@
+FROM python:3
+
+LABEL maintainer="stepan.satsuk@yandex.ru"
+
+WORKDIR .
+
+COPY . .
+
+ENV shape=circle
+ENV SIZE1=5
+ENV SIZE2=3
+
+CMD ["python3","main.py"]
+
