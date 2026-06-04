@@ -4,10 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-from shop.multitasking_views import multitasking
 from django.urls import path as _path
 urlpatterns = [
-    _path('multitasking/', multitasking, name='multitasking'),
     path('admin/', admin.site.urls),
     path('', include('shop.urls', namespace='shop')),
     path('users/', include('users.urls', namespace='users')),
